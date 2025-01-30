@@ -1,9 +1,9 @@
 import React from 'react'
 import { useContext } from 'react'
-import userContext from '../context/userContext'
+import UserContext from '../context/userContext'
 
 function profile() {
-  const {user} = useContext(userContext)
+  const {user} = useContext(UserContext)
   if (!user){
     return (
       <h1 className='welcome-heading'>NOT LOGGED IN</h1>
@@ -11,7 +11,7 @@ function profile() {
   }
   return (
     <div>
-        <div className="welcome-heading"> Welcome : {user.username} </div>
+        <div className="welcome-heading"> Welcome : {user.username} with password : {user.password}</div>
     </div>
   )
 }
