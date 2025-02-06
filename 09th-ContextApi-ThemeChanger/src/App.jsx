@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import Card from '../../09th-ContextApi-ThemeChanger/src/components/card'
-import Btn from '../../09th-ContextApi-ThemeChanger/src/components/btn'
+import Card from './components/card'
+import Btn from './components/btn'
 
 import React from 'react'
-import { ThemeProvider } from '../../09th-ContextApi-ThemeChanger/src/Context/ThemeContext'
+import { ThemeProvider } from './Context/ThemeContext'
 import { useEffect } from 'react'
 
 function App() {
